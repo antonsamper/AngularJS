@@ -1,7 +1,7 @@
 /**
  * @name useragent
  * @author Anton Samper Rivaya (@antonsamper)
- * @version 0.0.1
+ * @version 0.0.2
  * @description Add useragent and platform attributes, and output touch support as a class on the html tag.
  **/
 angular.module('useragent', []).
