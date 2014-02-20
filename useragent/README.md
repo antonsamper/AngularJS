@@ -40,6 +40,7 @@ html[data-platform='iPad'] body {
 html.touch body {
     background-color: #dcc175;
 }
+
 html.no-touch body {
     background-color: #d677c7;
 }
