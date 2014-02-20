@@ -15,5 +15,9 @@ var myApp = angular.module('myApp', ['useragent']);
 
 And that's it. You should now be able to see the something similar to the below.
 ```html
-<html class="ng-scope no-touch" xmlns:ng="http://angularjs.org" ng-app="myApp" data-useragent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36" data-platform="MacIntel">
+<html class="ng-scope no-touch"
+      xmlns:ng="http://angularjs.org"
+      ng-app="myApp"
+      data-useragent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36"
+      data-platform="MacIntel">
 ```
