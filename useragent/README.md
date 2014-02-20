@@ -23,7 +23,7 @@ And that's it. You should now be able to see the the additional attributes and c
       data-platform="MacIntel">
 ```
 ## CSS usage
-Once this is all in place, you can use this in your css to detect certain browsers/platforms/touch support.
+Once this is all in place, you can use this in your css to detect certain browsers/platforms/touch support and apply styles based on those.
 ```css
 html[data-useragent*='Chrome'] body {
     background-color: #ed7169;
@@ -43,5 +43,15 @@ html.touch body {
 
 html.no-touch body {
     background-color: #d677c7;
+}
+```
+
+## JS usage
+You can also user the useragent properties in your JavaScript by injection the `useragent` factory. You will now have access to the useragent object:
+```javascript
+myApp.run([useragent', function (useragent) {
+    console.log(useragent.browser); //Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) App…L, like Gecko) Chrome/32.0.1700.107 Safari/537.36
+    console.log(useragent.platfomr); //MacIntel
+    console.log(useragent.touch); //false
 }
 ```
