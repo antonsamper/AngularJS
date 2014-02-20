@@ -47,11 +47,11 @@ html.no-touch body {
 ```
 
 ## JS usage
-You can also user the useragent properties in your JavaScript by injection the `useragent` factory. You will now have access to the useragent object:
+You can also use the useragent properties in your JavaScript by injection the `useragent` factory into your app.
 ```javascript
-myApp.run([useragent', function (useragent) {
+myApp.run(['useragent', function (useragent) {
     console.log(useragent.browser); //Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) App…L, like Gecko) Chrome/32.0.1700.107 Safari/537.36
-    console.log(useragent.platfomr); //MacIntel
+    console.log(useragent.platforn); //MacIntel
     console.log(useragent.touch); //false
 }
 ```
