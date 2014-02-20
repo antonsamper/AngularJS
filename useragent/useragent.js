@@ -12,7 +12,7 @@ angular.module('useragent', []).
             touch:      (!!('ontouchstart' in window) || !!('onmsgesturechange' in window))
         };
     }]).
-    factory('useragent', ['$rootScope', function($rootScope) {
+    factory('useragentProperties', ['$rootScope', function($rootScope) {
         return $rootScope.useragent;
     }]).
     directive('html', function () {
