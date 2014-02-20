@@ -22,7 +22,7 @@ And that's it. You should now be able to see the the additional attributes and c
       data-useragent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36"
       data-platform="MacIntel">
 ```
-## Usage - CSS
+## Using with CSS
 Once this is all in place, you can use this in your css to detect certain browsers/platforms/touch support.
 ```css
 html[data-useragent*='Chrome'] body {
@@ -39,5 +39,8 @@ html[data-platform='iPad'] body {
 
 html.touch body {
     background-color: #dcc175;
+}
+html.no-touch body {
+    background-color: #d677c7;
 }
 ```
