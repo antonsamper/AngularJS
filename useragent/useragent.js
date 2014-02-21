@@ -7,7 +7,7 @@
 angular.module('useragent', []).
     run(['$rootScope', function($rootScope) {
         $rootScope.useragent = {
-            name:       navigator.userAgent,
+            browser:    navigator.userAgent,
             platform:   navigator.platform,
             touch:      (!!('ontouchstart' in window) || !!('onmsgesturechange' in window))
         };
@@ -20,7 +20,7 @@ angular.module('useragent', []).
             restrict: 'E',
             link: function (scope) {
                 var doc = document.documentElement;
-                doc.setAttribute('data-useragent', scope.useragent.name);
+                doc.setAttribute('data-browser', scope.useragent.browser);
                 doc.setAttribute('data-platform', scope.useragent.platform);
                 doc.className += ((scope.useragent.touch) ? ' touch' : ' no-touch');
             }
