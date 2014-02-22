@@ -19,7 +19,7 @@ And that's it. You should now be able to see the the additional attributes and c
 <html xmlns:ng="http://angularjs.org"
       ng-app="myApp"
       class="ng-scope no-touch"
-      data-useragent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36"
+      data-browser="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36"
       data-platform="MacIntel">
 ```
 ## CSS usage
