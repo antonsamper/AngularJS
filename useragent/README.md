@@ -1,6 +1,6 @@
 # AngularJS - useragent
 
-A simple AngularJS module that adds the current useragent and platform as attributes on the `html` tag. Additionally, it runs a simple test to detect 'touch' support and outputs the result as a class also on the `html` tag.
+A simple AngularJS module that adds the current user agent and platform as attributes on the AngularJS bootstrap element. Additionally, it runs a simple test to detect 'touch' support and outputs the result as a class on the same element.
 This module is based off [Rogie King's](http://rog.ie/) [HTML5 Boilerplate Add-on - CSS: User Agent Selectors](http://rog.ie/blog/html5-boilerplate-addon).
 
 ## Installation
@@ -14,7 +14,7 @@ This module is based off [Rogie King's](http://rog.ie/) [HTML5 Boilerplate Add-o
 var myApp = angular.module('myApp', ['useragent']);
 ```
 
-And that's it. You should now be able to see the the additional attributes and class name on your `html` tag.
+And that's it. You should now be able to see the the additional attributes and class name on your bootstrap element.
 ```html
 <html xmlns:ng="http://angularjs.org"
       ng-app="myApp"
@@ -47,7 +47,7 @@ html.no-touch body {
 ```
 
 ## JS usage
-You can also use the useragent properties in your JavaScript by injection the `useragentProperties` factory into your app.
+You can also use the user agent properties in your JavaScript by injection the `useragentProperties` factory into your app.
 ```javascript
 myApp.run(['useragentProperties', function (useragentProperties) {
     console.log(useragentProperties.browser); //Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) App…L, like Gecko) Chrome/32.0.1700.107 Safari/537.36
@@ -55,3 +55,6 @@ myApp.run(['useragentProperties', function (useragentProperties) {
     console.log(useragentProperties.touch); //false
 }
 ```
+
+## FAQ
+** Which element is the 'bootstrap' element?** The bootstrap element is the HTML element where you initiate you AngularJS application by adding the `ng-app="…"` attribute. More often than not, this will be the `<html>` element but not in every case.
