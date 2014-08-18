@@ -1,21 +1,25 @@
 /**
  * @name useragent
  * @author Anton Samper Rivaya (@antonsamper)
- * @version 0.0.3
+ * @version 0.0.4
  * @description Adds the user agent and platform attributes, as well as outputting touch support as a class on the bootstrap element.
+ * @requires angular
  **/
-angular.module('useragent', [])
-    .run(['$rootScope', function($rootScope) {
+(function(app) {
+
+    app.run(['$rootScope', function($rootScope) {
         $rootScope.useragent = {
             browser:    navigator.userAgent,
             platform:   navigator.platform,
             touch:      (!!('ontouchstart' in window) || !!('onmsgesturechange' in window))
         };
-    }])
-    .factory('useragentProperties', ['$rootScope', function($rootScope) {
+    }]);
+    
+    app.factory('useragentProperties', ['$rootScope', function($rootScope) {
         return $rootScope.useragent;
-    }])
-    .directive('ngApp', function () {
+    }]);
+    
+    app.directive('ngApp', function () {
         return {
             restrict: 'A',
             link: function (scope, element, attrs) {
@@ -26,3 +30,5 @@ angular.module('useragent', [])
             }
         };
     });
+
+}(angular.module('useragent', [])));

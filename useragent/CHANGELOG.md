@@ -1,3 +1,6 @@
+## 0.0.4 (August 15, 2014)
+  - Encapsulating module in an IIFE.
+  
 ## 0.0.3 (May 19, 2014)
   - Changed directive name to `ngApp` so that the module isn't dependent on the user bootstrapping Angular on the `<html>` tag.
   
