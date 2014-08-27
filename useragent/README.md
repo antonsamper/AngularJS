@@ -25,11 +25,11 @@ And that's it. You should now be able to see the the additional attributes and c
 ## CSS usage
 Once this is all in place, you can use this in your css to detect certain browsers/platforms/touch support and apply styles based on those.
 ```css
-html[data-useragent*='Chrome'] body {
+html[data-browser*='Chrome'] body {
     background-color: #ed7169;
 }
 
-html[data-useragent*='Chrome/30.0'] body {
+html[data-browser*='Chrome/30.0'] body {
     background-color: #2ca08f;
 }
 
