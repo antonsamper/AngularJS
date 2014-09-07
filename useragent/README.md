@@ -57,4 +57,4 @@ myApp.run(['useragentProperties', function (useragentProperties) {
 ```
 
 ## FAQ
-** Which element is the 'bootstrap' element?** The bootstrap element is the HTML element where you initiate you AngularJS application by adding the `ng-app="…"` attribute. More often than not, this will be the `<html>` element but not in every case.
+** Which element is the 'bootstrap' element?** The bootstrap element is the HTML element where you initiate your AngularJS application by adding the `ng-app="…"` attribute. More often than not, this will be the `<html>` element but not in every case.
