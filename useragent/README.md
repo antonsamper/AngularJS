@@ -53,7 +53,7 @@ myApp.run(['useragentProperties', function (useragentProperties) {
     console.log(useragentProperties.browser); //Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) App…L, like Gecko) Chrome/32.0.1700.107 Safari/537.36
     console.log(useragentProperties.platforn); //MacIntel
     console.log(useragentProperties.touch); //false
-}
+}]);
 ```
 
 ## FAQ
