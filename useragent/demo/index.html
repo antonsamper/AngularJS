@@ -6,7 +6,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
         <script src="../useragent.min.js"></script>
         <script>
-            angular.module('myApp', ['useragent']);
+            (function() {
+                angular.module('myApp', ['useragent']);
+            }());
         </script>
     </head>
     <body>
